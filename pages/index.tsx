@@ -16,29 +16,30 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" bg-red-100 m-4">
-  
-      <Image src={ProducMob}/>
-      <section className=' bg-red-100 m-4 '> 
-        <div>
-          <h1 className=' text-gray-500 text-sm tracking-widest '>PERFUME</h1>
 
-          <h1 className=' text-3xl'>Gabrielle Essence Eau De Parfum</h1>
+      <main className=" bg-red-100 h-screen w-screen">
 
-          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-          Perfumer-Creator for the House of CHANEL.</p>
+      <div className=' p-6'>
+            <Image className='rounded-t-xl' src={ProducMob} alt='Perfume Channel'/>
+          <section className='rounded-b-xl bg-white p-5 '> 
+        <div  >
+            <h1 className='text-gray-500 text-sm tracking-widest '>PERFUME</h1>
+            <h1 className=' text-4xl my-3 font-serif font-extrabold '>Gabrielle Essence Eau De Parfum</h1>
+            <p className='text-gray-500  text-lg py-2  tracking-widest '>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</p>
         </div>
         <div>
-          <h1>$149.99</h1>
-          <h4>$169.99</h4>
-
+        <div className='flex  items-center'>
+            <h1 className='text-green-800 text-3xl font-bold font- '>$149.99</h1>
+            <h4 className='mx-3 text-gray-600  line-through '>$169.99</h4>
         </div>
-
-        <div>
-        <button className='bg-teal-800 py-2 px-9 rounded-md text-white'> Add to Cart</button>
+        <div className='flex justify-center'>
+        <button className= 'btn my-3'> Add to Cart</button>
+        </div>
         </div>
 
       </section>
+      </div>
       
       </main>
     </>
