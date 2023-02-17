@@ -2,8 +2,8 @@
 @tailwind components;
 
 .btn {
-    @apply bg-green-900 py-4 px-36  shadow-sm transition ease-in-out duration-300 leading-snug whitespace-nowrap
-    text-base font-semibold hover:bg-teal-600 rounded-md text-white  tracking-wider cursor-pointer  ;
+    @apply bg-teal-700 py-4 w-full  shadow-sm transition ease-in-out duration-300 leading-snug whitespace-nowrap
+    text-base font-semibold hover:bg-purple-700 rounded-md text-white  tracking-wider cursor-pointer  ;
 }
 
 @tailwind utilities;

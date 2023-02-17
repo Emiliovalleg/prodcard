@@ -19,30 +19,27 @@ export default function Home() {
 
       <main className=" bg-red-100 h-screen w-screen">
 
-      <div className='  h-mid w-mid px-6 py-10 flex flex-col md:flex-row m-auto'>
-    
-              <Image className='rounded-t-xl sm:not-sr-only  md:sr-only' src={ProducMob} alt='Perfume Channel'/>
-              <Image className='rounded-t-xl sm:sr-only md:not-sr-only' src={ProducDesk} alt='Perfume Desk Channel'/>
-          
-          
-          <section className='rounded-b-xl bg-white p-5 '> 
-        <div  > 
-            <h1 className='text-gray-500 text-sm tracking-widest '>PERFUME</h1>
-            <h1 className=' text-4xl my-3 font-serif font-extrabold '>Gabrielle Essence Eau De Parfum</h1>
-            <p className='text-gray-500  text-lg py-2  tracking-widest '>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-            Perfumer-Creator for the House of CHANEL.</p>
+      <div className=' max-h-mid max-w-mid m-auto px-6 py-10 flex flex-col md:flex-row max-w-sm'>
+              <Image className='h-full w-full rounded-t-lg block md:hidden md:rounded-l-xl ' src={ProducMob} alt='Perfume Channel'/>
+              <Image className='h-full w-full  hidden md:block rounded-l-xl' src={ProducDesk} alt='Perfume Desk Channel'/>          
+        <section className='rounded-b-lg bg-white p-5  md:flex flex-col justify-around rounded-r-lg rounded-l-none  '> 
+        <div> 
+              <h1 className='text-gray-500 text-sm tracking-widest  md:text-xs '>PERFUME</h1>
+              <h1 className=' text-3xl my-3 font-serif font-extrabold md:text-'>Gabrielle Essence Eau De Parfum</h1>
+              <p className='text-gray-500  text-sm py-1  leading-6 tracking-widest  md:text-sm '>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+              Perfumer-Creator for the House of CHANEL.</p>
         </div>
         <div> 
-        <div className='flex  items-center'>
-            <h1 className='text-green-800 text-3xl font-bold font- '>$149.99</h1>
-            <h4 className='mx-3 text-gray-600  line-through '>$169.99</h4>
-        </div>
-        <div className='flex justify-center'>
-        <button className= 'btn my-3'> Add to Cart</button>
-        </div>
+          <div className='flex  items-center'>
+              <h1 className='text-teal-700 text-3xl py-2 font-bold font- '>$149.99</h1>
+              <h4 className='mx-3 text-gray-600  line-through '>$169.99</h4>
+          </div>
+          <div className='flex justify-center'>
+            <button className= 'btn my-3'> Add to Cart</button>
+          </div>
         </div>
 
-      </section>
+        </section>
       </div>
       
       </main>
