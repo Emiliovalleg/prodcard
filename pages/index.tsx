@@ -19,16 +19,20 @@ export default function Home() {
 
       <main className=" bg-red-100 h-screen w-screen">
 
-      <div className=' p-6'>
-            <Image className='rounded-t-xl' src={ProducMob} alt='Perfume Channel'/>
+      <div className='  h-mid w-mid px-6 py-10 flex flex-col md:flex-row m-auto'>
+    
+              <Image className='rounded-t-xl sm:not-sr-only  md:sr-only' src={ProducMob} alt='Perfume Channel'/>
+              <Image className='rounded-t-xl sm:sr-only md:not-sr-only' src={ProducDesk} alt='Perfume Desk Channel'/>
+          
+          
           <section className='rounded-b-xl bg-white p-5 '> 
-        <div  >
+        <div  > 
             <h1 className='text-gray-500 text-sm tracking-widest '>PERFUME</h1>
             <h1 className=' text-4xl my-3 font-serif font-extrabold '>Gabrielle Essence Eau De Parfum</h1>
             <p className='text-gray-500  text-lg py-2  tracking-widest '>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
             Perfumer-Creator for the House of CHANEL.</p>
         </div>
-        <div>
+        <div> 
         <div className='flex  items-center'>
             <h1 className='text-green-800 text-3xl font-bold font- '>$149.99</h1>
             <h4 className='mx-3 text-gray-600  line-through '>$169.99</h4>
@@ -44,4 +48,5 @@ export default function Home() {
       </main>
     </>
   )
+
 }
